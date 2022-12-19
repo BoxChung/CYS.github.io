@@ -1,4 +1,4 @@
 # CYS.github.io
 
-![alt](image/glass157gray.png?raw=true)
-![alt](imageglass234orange.png?raw=true)
+![image](https://github.com/BoxChung/CYS.github.io/blob/main/Portfolio_html/image/glass157gray.png)
+![image](https://github.com/BoxChung/CYS.github.io/blob/main/Portfolio_html/image/glass234orange.png)
