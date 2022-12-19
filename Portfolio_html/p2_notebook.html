@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>教育部智慧創新跨域人才培育聯盟計畫知識地圖 - UI/UX設計</title>
+        <link rel="stylesheet" type="test/css" href="reset.css">
+        <style>
+            *{
+                margin: 0%;
+                padding: 0%;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+
+
+            .menuback {
+                box-shadow: 0px 6px 20px ; color: rgb(216, 216, 216);
+                opacity: 50;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                z-index: 999;
+            }
+            .menu{
+                display: flex;
+                max-width: 1200px;
+                height: 90px;
+                margin: auto;
+                background-color: rgb(255, 255, 255);
+            }
+            .menu nav{
+                text-align: right;
+                width: 100%;
+                font-size: 0%;
+                line-height: 60px;
+            }
+            .menu nav a{
+                display: inline-block;
+                text-decoration: none;
+                font-size: 20px;
+                margin: 15px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(157, 157, 157);
+            }
+            #name{
+                text-align: left;
+                width: 110px;
+                height: auto;
+                padding-top: 9px;
+            }
+            .menu nav a:hover{
+                color: #eaab25;
+            }
+
+
+
+
+
+            .bannerback{
+                width: 100%;
+                height: 1000px;
+                background-image: radial-gradient( #ffd2e4 30%, rgb(255, 255, 255)60%);
+            }
+            .banner{
+                width: 700px;
+                height: 500px;
+                display: flex;
+                margin: auto;
+                padding-top: 250px;
+                filter:drop-shadow(-20px 10px 10px #d58ca9);
+                position: relative;
+            }
+            #notebook{
+                position: absolute;
+                left: 380px;
+                top: 500px;
+            }
+            #pad{
+                position: absolute;
+                left: -220px;
+                top: 540px;
+            }
+            #computer{
+                width: auto;
+                height: auto;
+            }
+
+
+            .intro{
+                width: 1000px;
+                margin: auto;
+                color: rgb(157, 157, 157);
+                justify-content: center;
+                font-size: 18px;
+                line-height: 2.5em;
+            }
+
+
+            .challenge{
+                margin: 250px auto 0px;
+                width: 1000px;
+                color: rgb(97, 97, 97);
+            }
+            .challenge h1{
+                text-align: center;
+                font-size: 35px;
+            }
+            .challenge .pic{
+                margin: 50px auto 0px;
+                text-align: center;
+            }
+            #shoot{
+                margin: 140px 60px;
+                
+            }
+            .challenge p{
+                text-align: center;
+                margin-top: 50px ;
+                line-height: 2.5em;
+                font-size: 18px;
+            }
+
+
+            .problem{
+                margin: auto;
+                width: 1000px;
+                margin-top: 150px;
+                color: rgb(97, 97, 97);
+            }
+            .problem h2{
+                font-size: 25px;
+            }
+            .problem p{
+                padding-top: 10px;
+                font-size: 18px;
+                justify-content: center;
+            }
+            .problem2 {
+                margin-top: 80px;
+            }
+            .problem3 {
+                margin-top: 80px;
+            }
+
+
+            .interview{
+                margin: 250px auto 0px;
+                width: 1000px;
+                color: rgb(97, 97, 97);
+            }
+            .interview h1{
+                text-align: center;
+                font-size: 35px;
+            }
+            .interview img{
+                width: 600px;
+                margin: 50px auto;
+                display: block;
+                text-align: center;
+            }
+            .interview p{
+                width: 600px;
+                text-align: center;
+                padding-top: 30px ;
+                line-height: 2.5em;
+                font-size: 18px;
+                margin: auto;
+            }
+
+
+            .summaries{
+                margin: 250px auto 0px;
+                width: 1000px;
+                color: rgb(97, 97, 97);
+            }
+            .summaries h1{
+                text-align: center;
+                font-size: 35px;
+            }
+            .summaries img{
+                width: 1000px;
+                margin: auto;
+                padding-top: 80px;
+            }
+
+
+            .prototype{
+                margin: 250px auto 0px;
+                width: 1000px;
+                color: rgb(97, 97, 97);
+            }
+            .prototype h1{
+                text-align: center;
+                font-size: 35px;
+            }
+            .how1{
+                padding-top: 50px;
+            }
+            .how2{
+                padding-top: 80px;
+            }
+            .how3{
+                padding-top: 80px;
+            }
+            .prototype .how{
+                width: 1000px;
+            }
+            .how p{
+                padding-top: 10px;
+                font-size: 18px;
+                margin: 20px 0px;
+            }
+
+
+
+            .web_back{
+                width: 100%;
+                height: 1200px;
+                background-image: radial-gradient( #ffd2e4 30%, rgb(255, 255, 255)60%);
+                margin-top: 250px;
+            }
+            .web{
+                padding-top: 150px;
+                width: 1000px;
+                color: rgb(97, 97, 97);
+                margin: auto;
+            }
+            .web h1{
+                text-align: center;
+                font-size: 35px;
+            }
+            .weball{
+                width: 1000px;
+                margin-top: 80px;
+                position: relative;
+            } 
+            #webgif{
+                position: absolute;
+                top: -10px;
+                clip:rect(46px 966px 900px 33px);
+            }
+
+
+
+            .Port h1{
+                font-size: 35px;
+                text-align: center;
+                padding-top: 150px;
+                color: rgb(157, 157, 157);
+           }
+            .Ports1{
+                width: 1200px;
+                height: auto;
+                display: flex;
+                margin: auto;
+                padding-top: 15px;
+            }
+            .Ports1 a{
+                width: 300px;
+                height: auto;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .Ports1_word{
+                width: 1200px;
+                height: auto;
+                margin: auto;
+                color: rgb(157, 157, 157);
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                display: flex;
+                padding-top: 80px;
+
+            }
+            .Ports1_word p{
+                display: inline-block;
+                width: 230px;
+                height: auto;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .Ports1 a:hover{
+                transform: translateY(-10px);
+            }
+
+
+
+            .Ports2 {
+                padding-top: 60px;
+                width: 1200px;
+                height: auto;
+                display: flex;
+                margin: auto;
+                position: relative;
+            }
+            .Ports2 a{
+                width: 400px;
+                height: auto;
+                margin: 0px 60px;
+                text-align: center;
+            }
+            .Ports2_back{
+                padding-top: 0px;
+                width: 100%;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(157,157,157);
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                margin: auto;
+                display: flex;
+                position: absolute;
+                top: 8395px;
+                box-shadow:0px -15px 30px -22px rgb(157, 157, 157);
+            }
+            .portword{
+                padding-top: 80px;
+                width: 1200px;
+                height: 200px;
+                margin: auto;
+                display: flex;
+            }
+            .portword p{
+                width: 200px;
+                height: auto;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .Ports2 a:hover{
+                transform: translateY(-10px);
+            }
+
+
+            .contact{
+            margin: 30px  auto auto;
+            text-align: center;
+            padding-top: 20px;
+            width: 100%;
+            height: 50px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            background-color: rgb(238, 238, 238);
+            color: rgb(157, 157, 157);
+           }
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="menuback ">
+            <div class="menu">
+                <a href="Portfolio 20221210.html" >
+                    <img src="/img/glass157gray.png" id="name" 
+                    onmouseover="this.src='/img/glass234orange.png';" onmouseout="this.src='/img/glass157gray.png';">
+                </a>
+                <nav style="navbar-right" >
+                    <a href="Portfolio 20221210.html#portgif" >Portfolio</a>
+                    <a href="Portfolio 20221210.html#proffgif" >Professional</a>
+                    <a href="Portfolio 20221210.html#resumegif" >Resume</a>
+                </nav>  
+            </div>    
+        </div>
+
+
+
+
+        <div class="bannerback">
+            <div class="banner">
+                <img src="/img/p2_notebook/pad.png" id="pad" style="width: auto; height: 40%;">
+                <img src="/img/p2_notebook/computer.png" id="computer" style="width: auto; height: 100%;">
+                <img src="/img/p2_notebook/notebook.png" id="notebook" style="width: auto; height: 45%;">
+            </div>
+        </div>
+
+
+        <div class="intro">
+            <p>「 知識地圖 」 是一個提供資訊背景與非資訊背景科系之學生跨領域學習的平台。根據不同學生的學習背景及想了解的領域，調整出合適的學習歷程來提供學生較完善的學習內容與必備的相關知識。此為教育部智慧創新跨域人才培育聯盟計畫之平台設置，目前已製作完善並供學生使用。</p>
+        </div>
+
+
+        <div class="challenge">
+            <h1>- 迎接挑戰 -</h1>
+            <div class="pic">
+                <img src="/img/p2_notebook/talk.png" id="talk">
+                <img src="/img/p2_notebook/shoot.png" id="shoot">
+                <img src="/img/p2_notebook/map_intro.png" id="map_intro">
+            </div>
+            <p>透過資訊視覺化形式將所蒐集的資訊整理與歸納出一份學習知識地圖。</p>
+        </div>
+
+
+        
+        <div class="problem">
+            <div class="problem1">
+                <h2>學生的問題?</h2>
+                <p>我想做這個行業，但我不知道要學什麼?</p>
+                <p>哪一些東西是基礎一定要會的?</p>
+                <p>這麼多東西，我應該從哪個開始學起?</p>
+            </div>
+            <div class="problem2">
+                <h2>如何解決?</h2>
+                <p><font color="#d58ca9">將不同背景的同學分別歸類，</font>並整理出不同學習背景的學生認為對其想了解之領域<font color="#d58ca9">應具備的能力</font>為哪一些。</p>
+            </div>
+            <div class="problem3">
+                <h2>解決的成效?</h2>
+                <p><font color="#d58ca9">不同背景的學生對於想了解的領域有了更明確的學習項目與學習順序，且因介面規劃較簡單、易懂，可以有效提高使用者使用意願。</font></p>
+            </div>
+        </div>
+        
+
+        <div class="interview">
+            <h1>- 使用者經驗訪談 -</h1>
+            <img src="/img/p2_notebook/interview.png" id="interview">
+            <p>透過使用者經驗訪談法訪問一群學生，針對在學期間的學習內容提供學習經驗分享，並以錄音與逐字稿的方式蒐集與彙整。</p>
+        </div>
+
+
+        <div class="summaries">
+            <h1>- 樣本總攬手稿圖 -</h1>
+            <img src="/img/p2_notebook/handdraw.png" id="handdraw">
+        </div>
+
+
+        <div class="prototype">
+            <h1>- 介面展示 -</h1>
+            <div class="how">
+                <div class="how1">
+                    <p>初版: 針對所有內容進行初步UI規劃</p>
+                    <img src="/img/p2_notebook/page-01.png" style="width: 100%;">
+                </div>
+                <div class="how2">
+                    <p>第二版: 優化UI介面設計</p>
+                    <img src="/img/p2_notebook/page-02.png" style="width: 100%;">
+                </div>
+                <div class="how3">
+                    <p><font color="#d58ca9">最終版: 因缺乏分類群，因此調整UI設計，優化整個UX階層設計</font></p>
+                    <img src="/img/p2_notebook/page-03.png" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="web_back">
+            <div class="web">
+                <h1>- 網站成果展示 -</h1>
+                <div class="weball">
+                    <img src="/img/p2_notebook/computerback.png" id="computerback" style="width: 100%;">
+                    <div clas="webgiff">
+                        <img src="/img/p2_notebook/web.gif" id="webgif" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="Port">
+            <h1>其他設計作品</h1>
+            <div class="Ports1_word">
+                <p>教育部智慧創新跨域人才培育聯盟計畫知識地圖 - UI/UX設計</p>
+                <p>公共廁所門把鎖 - UX體驗優化設計</p>
+            </div>
+            <div class="Ports1">
+                <a href="p1_Watch.html"><img src="/img/Portfolio_imggif/watch.png" id="watch"style="width: 100%; height=auto;"></a>
+                <a href="p3_Design.html"><img src="/img/Portfolio_imggif/design.png" id="design"style="width: 100%; height=auto;"></a>
+            </div>
+            <div class="Ports2_back">
+                <div class="portword">
+                    <p>影片剪輯後製類</p>
+                    <p>貼圖設計</p>
+                    <p>平面設計類</p>
+                </div>
+            </div>
+            <div class="Ports2">
+                <a href="p4_Film.html"><img src="/img/Portfolio_imggif/film-01.png" id="film" style="width: 100%; height: auto;"></a>
+                <a href="p5_Sticker.html"><img src="/img/Portfolio_imggif/sticker-03-01.png" id="sticker"style="width: 100%; height=auto;"
+                onmouseover="this.src='/img/Portfolio_imggif/sticker-02-01.png';" onmouseout="this.src='/img/Portfolio_imggif/sticker-03-01.png';"></a> 
+                <a href="p6_Graphic.html"><img src="/img/Portfolio_imggif/graphic.png" id="graphic"style="width: 80%; height=auto;"></a> 
+            </div>
+        </div>
+        <div class="contact">
+            <p>
+                Contact me  /  sherryqq0330box@gmail.com
+            </p>
+        </div>
+
+
+        
+    </body>
+</html>

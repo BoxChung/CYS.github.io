@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>公共廁所門把鎖 - UX體驗優化設計</title>
+        <link rel="stylesheet" type="test/css" href="reset.css">
+        <style>
+            *{
+                margin: 0%;
+                padding: 0%;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+            .menuback {
+                    box-shadow: 0px 6px 20px ; color: rgb(216, 216, 216);
+                    opacity: 50;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    z-index: 999;
+                    background-color: rgb(255, 255, 255);
+                }
+                .menu{
+                    display: flex;
+                    max-width: 1200px;
+                    height: 90px;
+                    margin: auto;
+                    background-color: rgb(255, 255, 255);
+                }
+                .menu nav{
+                    text-align: right;
+                    width: 100%;
+                    font-size: 0%;
+                    line-height: 60px;
+                }
+                .menu nav a{
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 20px;
+                    margin: 15px;
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    color: rgb(157, 157, 157);
+                }
+                #name{
+                    text-align: left;
+                    width: 110px;
+                    height: auto;
+                    padding-top: 9px;
+                }
+                .menu nav a:hover{
+                    color: #eaab25;
+                }
+
+
+                .banner{
+                    width: 100%;
+                    height: 1000px;
+                    margin: auto;
+                    text-align: center;
+                }
+                .banner img{
+                    padding-top: 100px;
+                }
+                .intro{
+                    width: 1000px;
+                    margin: auto;
+                    color: rgb(157, 157, 157);
+                    justify-content: center;
+                    font-size: 18px;
+                    line-height: 2.5em;
+                }
+
+
+
+                .challenge{
+                    margin: 250px auto 0px;
+                    width: 1000px;
+                    color: rgb(97, 97, 97);
+                }
+                .challenge h1{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                .challenge img{
+                    margin: 50px auto 0px;
+                    text-align: center;
+                }
+                .challenge p{
+                    text-align: center;
+                    margin-top: 50px ;
+                    line-height: 2.5em;
+                    font-size: 18px;
+                }
+
+
+                .problem{
+                    margin: auto;
+                    width: 1000px;
+                    margin-top: 150px;
+                    color: rgb(97, 97, 97);
+                }
+                .problem h2{
+                    font-size: 25px;
+                }
+                .problem p{
+                    padding-top: 10px;
+                    font-size: 18px;
+                    justify-content: center;
+                }
+                .problem2 {
+                    margin-top: 80px;
+                }
+                .problem3 {
+                    margin-top: 80px;
+                }
+
+
+
+                .interview{
+                    margin: 250px auto 0px;
+                    width: 1000px;
+                    color: rgb(97, 97, 97);
+                }
+                .interview h1{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                .interview img{
+                    width: 600px;
+                    margin: 50px auto;
+                    display: block;
+                    text-align: center;
+                }
+                .interview p{
+                    width: 600px;
+                    text-align: center;
+                    padding-top: 30px ;
+                    line-height: 2.5em;
+                    font-size: 18px;
+                    margin: auto;
+                }
+
+
+
+                .circumstance{
+                    margin: 250px auto 0px;
+                    width: 1000px;
+                    color: rgb(97, 97, 97);
+                }
+                .circumstance h1{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                .circumstance img{
+                    width: 1000px;
+                    margin: auto;
+                    padding-top: 80px;
+                }
+
+
+
+                .summaries{
+                    margin: 250px auto 0px;
+                    width: 1000px;
+                    color: rgb(97, 97, 97);
+                }
+                .summaries h1{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                .summaries img{
+                    width: 1000px;
+                    margin: auto;
+                }
+
+
+
+                .doublediamond{
+                    margin: 250px auto 0px;
+                    width: 1000px;
+                    color: rgb(97, 97, 97);
+                }
+                .doublediamond h1{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                .doublediamond img{
+                    width: 1000px;
+                    margin: auto;
+                    padding-top: 80px;
+                }
+
+
+
+                .hci{
+                    margin: 250px auto 0px;
+                    width: 1000px;
+                    color: rgb(97, 97, 97);
+                }
+                .hci h1{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                .hciimg{
+                    width: 800px;
+                    margin: auto;
+                    padding-top: 80px;
+                }
+                .hci p{
+                    width: 850px;
+                    justify-content: center;
+                    padding-top: 80px ;
+                    line-height: 2.5em;
+                    font-size: 18px;
+                    margin: auto;
+                }
+
+
+
+                .newsituationback{
+                    width: 100%;
+                    height: 1000px;
+                    box-shadow: 0px 0px 50px ; color: rgb(216, 216, 216);
+                    background-color: rgb(255, 255, 255);
+                }
+                .newsituation{
+                    margin: 250px auto 0px;
+                    width: 1000px;
+                    color: rgb(97, 97, 97);
+                    padding-top: 120px;
+                }
+                .newsituation h1{
+                    text-align: center;
+                    font-size: 35px;
+                }
+                .newsituation img{
+                    width: 1000px;
+                    margin: auto;
+                    padding-top: 80px;
+                }
+
+
+                .notice{
+                    width: 100%;
+                    height: 300px;
+                    background-color: #5CAFC5;
+                    box-shadow: 0px 15px 30px ; color: rgb(216, 216, 216);
+                }
+                .notice p{
+                    width: 1000px;
+                    margin: auto;
+                    text-align: center;
+                    padding-top: 120px;
+                    line-height: 2.5em;
+                    font-size: 18px;
+                    color: rgb(255, 255, 255);
+                }
+
+
+
+                .Port h1{
+                    font-size: 35px;
+                    text-align: center;
+                    padding-top: 150px;
+                    color: rgb(157, 157, 157);
+                }
+                .Ports1{
+                    width: 1200px;
+                    height: auto;
+                    display: flex;
+                    margin: auto;
+                    padding-top: 15px;
+                }
+                .Ports1 a{
+                    width: 300px;
+                    height: auto;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                .Ports1_word{
+                    width: 1200px;
+                    height: auto;
+                    margin: auto;
+                    color: rgb(157, 157, 157);
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    display: flex;
+                    padding-top: 80px;
+
+                }
+                .Ports1_word p{
+                    display: inline-block;
+                    width: 230px;
+                    height: auto;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                .Ports1 a:hover{
+                    transform: translateY(-10px);
+                }
+
+
+
+                .Ports2 {
+                    padding-top: 60px;
+                    width: 1200px;
+                    height: auto;
+                    display: flex;
+                    margin: auto;
+                    position: relative;
+                }
+                .Ports2 a{
+                    width: 400px;
+                    height: auto;
+                    margin: 0px 60px;
+                    text-align: center;
+                }
+                .Ports2_back{
+                    padding-top: 0px;
+                    width: 100%;
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    color: rgb(157,157,157);
+                    background-color: rgb(255, 255, 255);
+                    text-align: center;
+                    margin: auto;
+                    display: flex;
+                    position: absolute;
+                    top: 9875px;
+                    box-shadow:0px -15px 30px -22px rgb(157, 157, 157);
+                }
+                .portword{
+                    padding-top: 80px;
+                    width: 1200px;
+                    height: 200px;
+                    margin: auto;
+                    display: flex;
+                }
+                .portword p{
+                    width: 200px;
+                    height: auto;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                .Ports2 a:hover{
+                    transform: translateY(-10px);
+                }
+
+
+                .contact{
+                margin: 30px  auto auto;
+                text-align: center;
+                padding-top: 20px;
+                width: 100%;
+                height: 50px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 17px;
+                background-color: rgb(238, 238, 238);
+                color: rgb(157, 157, 157);
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="menuback ">
+            <div class="menu">
+                <a href="Portfolio 20221210.html" >
+                    <img src="/img/glass157gray.png" id="name" 
+                    onmouseover="this.src='/img/glass234orange.png';" onmouseout="this.src='/img/glass157gray.png';">
+                </a>
+                <nav style="navbar-right" >
+                    <a href="Portfolio 20221210.html#portgif" >Portfolio</a>
+                    <a href="Portfolio 20221210.html#proffgif" >Professional</a>
+                    <a href="Portfolio 20221210.html#resumegif" >Resume</a>
+                </nav>  
+            </div>    
+        </div>
+
+
+        <div class="banner">
+            <img src="/img/p3_design/banner.png">
+        </div>
+        <div class="intro">
+            <p>No Touching 是以無接觸方式進行廁所門把鎖開關控制，顛覆以往使用手推移門把鎖進行上鎖與開鎖，以直觀且無接觸的交互設計讓使用者在操作上更易懂與易操作，同時也保護所有使用者的健康、讓所有人如廁時更安心、更衛生。此設計提案透過訪談法進行初步使用者體驗資訊之蒐集，彙整出較合適的設計提案。</p>
+        </div>
+
+
+        <div class="challenge">
+            <h1>- 迎接挑戰 -</h1>
+            <img src="/img/p3_design/challenge.png" style="width: 100%;">
+            <p>解決傳統用手旋轉門把鎖來鎖上的方法，透過感應的方式來鎖上與打開門把鎖。</p>
+        </div>
+
+
+        <div class="problem">
+            <div class="problem1">
+                <h2>門把鎖的危害?</h2>
+                <p>根據文獻顯示，公共廁所門把上有眾多潛在的致病菌，包含金黃色葡萄球菌、弗氏檸檬酸桿菌、陰溝腸桿菌等等，且這些病菌來源幾乎源自於所有廁所使用者的手。</p>
+                <p style="font-size: 10px;">(參考文獻: Fakhoury, S., & Nawas, T. (2018). Contamination of the internal handles/knobs of public restroom doors with potentially pathogenic bacteria. Int J Curr Microbiol App Sci, 7, 3434-3440.)</p>
+            </div>
+            <div class="problem2">
+                <h2>如何解決?</h2>
+                <p><font color="#5CAFC5">透過感應的方式來操作門把鎖鎖上與打開。</font></p>
+            </div>
+            <div class="problem3">
+                <h2>解決的成效?</h2>
+                <p><font color="#5CAFC5">減少致病菌對使用者的危害。</font></p>
+                <p><font color="#5CAFC5">保護所有使用者的健康、讓所有人如廁時更安心、更衛生。</font></p>
+            </div>
+        </div>
+
+
+        <div class="interview">
+            <h1>- 使用者經驗訪談 -</h1>
+            <img src="/img/p3_design/interview.png" id="interview">
+            <p>透過使用者經驗訪談法訪問一般會使用到公共廁所的使用者，共計12位。了解使用者在上廁所時是否會有接觸到排泄物體的可能性，以及使用者如廁前與如廁後的習慣。</p>
+        </div>
+
+
+        <div class="circumstance">
+            <h1>- 使用者使用情況調查 -</h1>
+            <img src="/img/p3_design/circumstance.png">
+        </div>
+
+
+        <div class="summaries">
+            <h1>- 廁所使用流程圖 -</h1>
+            <img src="/img/p3_design/summaries.png">
+        </div>
+
+
+        <div class="doublediamond">
+            <h1>- Double Diamond 分析 -</h1>
+            <img src="/img/p3_design/double.png">
+        </div>
+
+
+        <div class="hci">
+            <h1>- 人機互動設計(HCI) -</h1>
+            <div class="hciimg">
+                <img src="/img/p3_design/HCI.png" style="width: 100%;">
+            </div>
+            <p>控制介面設計包含以下四種「定型反應」、「相容性」、「控制介面設計」以及「符碼化」。定型反應(或刻板印象)指有相似文化性質的人群，對於某些事物形成相同的成見。而台灣廁所的使用情況為紅色表示上鎖(無法使用)與綠色表示開鎖(可以使用)，紅色與綠色為此設計條件之一。相容性好表示該設計應可讓人學習更容易、反應時間短與更少的失誤。根據調查，使用者對於看到感應門鎖的第一個反應是將手掌置於感應器前約2~3秒，觀察反應器是否有反饋。若無反饋才會開始揮動手掌。因此，感應方法應以置於感應器前停止約2~3秒為優先操控設計形式。本設計更接近間斷型的控制介面類型，手勢成功觸發後系統即刻變色(立刻變成紅色或是綠色)，而非逐漸轉變。</p>
+        </div>
+
+
+        <div class="newsituationback">
+            <div class="newsituation">
+                <h1>- 新使用者使用流程圖 -</h1>
+                <img src="/img/p3_design/newsituation.png">
+            </div>
+        </div>
+
+
+        <div class="notice">
+            <p>本提案主要針對公共廁所解決如廁後觸碰到門把鎖的機會來維護使用者的健康與衛生，以及提供更直觀的打開與鎖上門把鎖的方法進行操作設計。後續可以針對此提案進行實體設計，並可透過Kano’s Model進行使用者體驗調查。</p>
+        </div>
+        
+
+        <div class="Port">
+            <h1>其他設計作品</h1>
+            <div class="Ports1_word">
+                <p>教育部智慧創新跨域人才培育聯盟計畫知識地圖 - UI/UX設計</p>
+                <p>公共廁所門把鎖 - UX體驗優化設計</p>
+            </div>
+            <div class="Ports1">
+                <a href="p1_Watch.html"><img src="/img/Portfolio_imggif/watch.png" id="watch"style="width: 100%; height=auto;"></a>
+                <a href="p2_notebook.html"><img src="/img/Portfolio_imggif/notebook.png" id="notebook"style="width: 100%; height=auto;"></a>
+            </div>
+            <div class="Ports2_back">
+                <div class="portword">
+                    <p>影片剪輯後製類</p>
+                    <p>貼圖設計</p>
+                    <p>平面設計類</p>
+                </div>
+            </div>
+            <div class="Ports2">
+                <a href="p4_Film.html"><img src="/img/Portfolio_imggif/film-01.png" id="film" style="width: 100%; height: auto;"></a>
+                <a href="p5_Sticker.html"><img src="/img/Portfolio_imggif/sticker-03-01.png" id="sticker"style="width: 100%; height=auto;"
+                onmouseover="this.src='/img/Portfolio_imggif/sticker-02-01.png';" onmouseout="this.src='/img/Portfolio_imggif/sticker-03-01.png';"></a> 
+                <a href="p6_Graphic.html"><img src="/img/Portfolio_imggif/graphic.png" id="graphic"style="width: 80%; height=auto;"></a> 
+            </div>
+        </div>
+        <div class="contact">
+            <p>
+                Contact me  /  sherryqq0330box@gmail.com
+            </p>
+        </div>
+
+
+
+    </body>
+</html>

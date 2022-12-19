@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>智慧型手錶等待介面之視覺深度形式對使用者情緒感知的影響</title>
+        <link rel="stylesheet" type="test/css" href="reset.css">
+        <style>
+             *{
+                margin: 0%;
+                padding: 0%;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+
+
+            .menuback {
+                box-shadow: 0px 6px 10px ; color: rgb(216, 216, 216);
+                opacity: 50;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 999;
+                background: #fff;
+            }
+            .menu{
+                display: flex;
+                max-width: 1200px;
+                height: 90px;
+                margin: auto;
+                background-color: rgb(255, 255, 255);
+            }
+            .menu nav{
+                text-align: right;
+                width: 100%;
+                font-size: 0%;
+                line-height: 60px;
+            }
+            .menu nav a{
+                display: inline-block;
+                text-decoration: none;
+                font-size: 20px;
+                margin: 15px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(157, 157, 157);
+            }
+            #name{
+                text-align: left;
+                width: 110px;
+                height: auto;
+                padding-top: 9px;
+            }
+            .menu nav a:hover{
+                color: #eaab25;
+            }
+
+
+
+
+            .banner{
+                width: 100%;
+                height: 1000px;
+                background: linear-gradient(to bottom right, #347EBA, #fff);
+            }
+            .W_img{
+                width: 1200px;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                padding-top: 300px;
+                filter:drop-shadow(-50px -30px 15px #5b86a9);
+            }
+            #watch 2{
+                position: relative;
+            }
+            #pl_gif{
+                z-index: 1;
+                background-color: aquamarine;
+                border-radius: 200px;
+                font-size: 0%;
+                transform: scale(0.245);
+                position: absolute;
+                top: -183px;
+                left: -5px;
+            }
+            .titleback{
+                width: 1200px;
+                margin: 30px auto;
+                color: rgb(157, 157, 157);
+
+            }
+            .titleback p{
+                font-size: 18px;
+                margin: auto;
+                width: 1000px;
+                line-height: 2.5em;
+                text-align: justify;
+            }
+
+
+
+            .static{
+                width: 1000px;
+                height: auto;
+                margin: 250px auto 0px;
+                color: rgb(97, 97, 97);
+            }
+            .static h1{
+                font-size: 35px;
+                text-align: center;
+            }
+            .static ul{
+                text-align: left;
+                justify-content: center;
+                margin: 50px auto;
+                line-height: 2.5em;
+                font-size: 18px;
+            }
+            .static img{
+                width: 700px;
+                height: auto;
+                margin: 0px auto;
+                display: block;
+            }
+            .static2{
+                width: 1000px;
+                height: auto;
+                margin: 120px auto;
+                color: rgb(97, 97, 97);
+            }
+            .static2 ul{
+                justify-content: center;
+                margin: 50px auto;
+                line-height: 2.5em;
+                font-size: 18px;
+            }
+            .static2 img{
+                width: 700px;
+                height: auto;
+                margin: 0px auto;
+                display: block;
+            }
+
+
+
+            .pilotback{
+                width: 1000px;
+                height: auto;
+                margin: 250px auto 0px;
+                color: rgb(97, 97, 97);
+            }
+            .pilotback h1{
+                font-size: 35px;
+                text-align: center;
+            }
+            .pilotback p{
+                justify-content: center;
+                margin-top: 50px ;
+                line-height: 2.5em;
+                font-size: 18px;
+            }
+            .pilo1{
+                width: 1000px;
+                height: auto;
+                display: flex;
+                text-align: center;
+                color: rgb(97, 97, 97);
+                margin: 30px auto;
+                font-size: 18px;
+            }
+            .pilo2{
+                width: 1000px;
+                height: auto;
+                display: flex;
+                text-align: center;
+                color: rgb(97, 97, 97);
+                margin: 40px auto;
+                font-size: 18px;
+            }
+            .pilo1 img{
+                width: 500px;
+                height: auto;
+            }
+            .pilo1 p{
+                padding-top: 15px;
+            }
+            .pilo2 img{
+                width: 500px;
+                height: auto;
+            }
+            .pilo2 p{
+                padding-top: 15px;
+            }
+
+            .interview{
+                width: 100%;
+                height: auto;
+                background-color: #ffffff;
+                margin-top: 130px;
+                box-shadow: 0px 0px 50px ; color: rgb(216, 216, 216);
+            }
+            .interall{
+                padding-top: 70px;
+                width: 1000px;
+                margin: auto;
+                display: flex;
+                color: rgb(97, 97, 97);
+                font-size: 18px;
+            }
+            .interall div{
+                width: 400px;
+                height: 360px;
+            }
+            .interall img{
+                filter:drop-shadow(0px 5px 10px rgb(216, 216, 216));
+            }
+            .interall .word{
+                padding-top: 25px;
+                line-height: 30px;
+            }
+
+
+
+            .mainEx{
+                width: 1000px;
+                height: auto;
+                text-align: center;
+                margin: 250px auto 0px;
+                color: rgb(97, 97, 97);
+            }
+            .mainEx h1{
+                font-size: 35px;
+                text-align: center;
+            }
+            .mainEx p{
+                text-align: center;
+                margin: 50px auto 30px;
+                font-size: 18px;
+            }
+
+
+            .prototype{
+                width: 1000px;
+                height: auto;
+                margin: 150px auto 0px;
+                color: rgb(97, 97, 97);
+            }
+            .prototype p{
+                text-align: center;
+                margin: 50px auto;
+                font-size: 18px;
+            }
+            .prototype .protowatch{
+                width: 500px;
+                height: auto;
+                margin: auto;
+                padding-top: 0px;
+                position: relative;
+                padding-left: 15px;
+            }
+            #protowatchgif{
+                border-radius: 14%;
+                z-index: 1;
+                position: absolute;
+                top: 195px;
+                left: 60px;
+            }
+
+
+            .participants{
+                width: 1000px;
+                height: auto;
+                text-align: center;
+                margin: 250px auto 0px;
+                color: rgb(97, 97, 97);
+            }
+            .participants h1{
+                font-size: 35px;
+                text-align: center;
+            }
+            .participants p{
+                text-align: center;
+                margin: 50px auto;
+                font-size: 18px;
+            }
+            .participants img{
+                padding-left: 55px;
+            }
+
+
+            .Exflow{
+                width: 1000px;
+                height: auto;
+                text-align: center;
+                margin: 250px auto 0px;
+                color: rgb(97, 97, 97);
+            }
+            .Exflow h1{
+                font-size: 35px;
+                text-align: center;
+            }
+            .Exflow img{
+                width: 100%;
+                margin-top: 50px;
+            }
+
+
+            .resultback{
+                width: 100%;
+                height: 480px;
+                background-color: #3FA2E2;
+            }
+            .result{
+                width: 1000px;
+                height: auto;
+                margin: 250px auto 0px;
+                color: rgb(255, 255, 255);
+                padding-top: 100px;
+            }
+            .result h1{
+                font-size: 35px;
+                text-align: center;
+            }
+            .result ul{
+                justify-content: center;
+                margin: 50px auto;
+                line-height: 2.5em;
+                font-size: 18px;
+            }
+
+
+           .Port h1{
+                font-size: 35px;
+                text-align: center;
+                padding-top: 150px;
+                color: rgb(157, 157, 157);
+           }
+            .Ports1{
+                width: 1200px;
+                height: auto;
+                display: flex;
+                margin: auto;
+                padding-top: 15px;
+            }
+            .Ports1 a{
+                width: 300px;
+                height: auto;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .Ports1_word{
+                width: 1200px;
+                height: auto;
+                margin: auto;
+                color: rgb(157, 157, 157);
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                display: flex;
+                padding-top: 80px;
+
+            }
+            .Ports1_word p{
+                display: inline-block;
+                width: 230px;
+                height: auto;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .Ports1 a:hover{
+                transform: translateY(-10px);
+            }
+
+
+
+            .Ports2 {
+                padding-top: 60px;
+                width: 1200px;
+                height: auto;
+                display: flex;
+                margin: auto;
+                position: relative;
+            }
+            .Ports2 a{
+                width: 400px;
+                height: auto;
+                margin: 0px 60px;
+                text-align: center;
+            }
+            .Ports2_back{
+                padding-top: 0px;
+                width: 100%;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(157,157,157);
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                margin: auto;
+                display: flex;
+                position: absolute;
+                top: 9940px;
+                box-shadow:0px -15px 30px -22px rgb(157, 157, 157);
+            }
+            .portword{
+                padding-top: 80px;
+                width: 1200px;
+                height: 200px;
+                margin: auto;
+                display: flex;
+            }
+            .portword p{
+                width: 200px;
+                height: auto;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .Ports2 a:hover{
+                transform: translateY(-10px);
+            }
+
+
+            .contact{
+            margin: 30px  auto auto;
+            text-align: center;
+            padding-top: 20px;
+            width: 100%;
+            height: 50px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            background-color: rgb(238, 238, 238);
+            color: rgb(157, 157, 157);
+           }
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="menuback ">
+            <div class="menu">
+                <a href="Portfolio 20221210.html" >
+                    <img src="/img/glass157gray.png" id="name" 
+                    onmouseover="this.src='/img/glass234orange.png';" onmouseout="this.src='/img/glass157gray.png';">
+                </a>
+                <nav style="navbar-right" >
+                    <a href="Portfolio 20221210.html#portgif" >Portfolio</a>
+                    <a href="Portfolio 20221210.html#proffgif" >Professional</a>
+                    <a href="Portfolio 20221210.html#resumegif" >Resume</a>
+                </nav>  
+            </div>    
+        </div>
+
+
+
+        <div class="banner">
+            <div class="W_img">
+                <img src="/img/p1_watch/W_img1-01.png" id="watch 1" style="transform: rotate(-20deg); width: auto; height: 100%;">
+                <img src="/img/p1_watch/watch.png" id="watch 2" style="scale: 1.3; z-index: 1;  width: auto; height: 100%;">
+                <img src="/img/p1_watch/W_img2-01.png" id="watch 3" style="transform: rotate(20deg);  width: auto; height: 100%;">
+                <img src="/img/p1_watch/PL_2.gif" id="pl_gif" style="width: 100%; height:auto;">
+            </div>
+        </div>
+        <div class="titleback">
+            <p>
+                「智慧型手錶等待介面之視覺深度形式對使用者情緒感知的影響」為針對智慧型手錶 (Apple Watch) 的使用者對於較小等待介面的視覺深度設計進行使用者體驗 (UX) 調查。前導研究透過專家訪談了解本研究所設計之動態介面 (UI) 是否符合所設定之碰撞預期效果，選出較符合的動態介面後製作出 Prototype ，並提供給一般的使用者進行測試。測試期間蒐集所有受測者之腦波數據 (Attention 與 Meditation 數值)，以及時間感知量表 (7點李克特量表(Likert Scale)) 進行分析並彙整出最終結論以及提供後續相關研究方向。
+            </p>
+        </div>
+
+
+        <div class="static">
+            <h1>- 動機與目的 -</h1>
+            <ul>
+                <li>根據IDC《中國可穿戴設備市場季度跟踪報告，2021年第一季度》報告顯示，2021第一季度可穿戴裝置出貨量相比於2020年第一季<font color="#347EBA">增長了34.4%。</font></li>
+                <li>全球可穿戴設備市場以耳戴式、手錶、手環為主，其中佔比例由高到低依序為<font color="#347EBA">耳戴式、手錶、手環，分別佔市場比例59.14% 、23.08%、17.08%。</font></li>
+                <li>在腕帶式智能可穿戴設備中，最常在可穿戴設備的介面上顯示健康訊息；其次是天氣顯示；最後是設備顯示。在健康資訊中以步數、心律、卡路里顯示占大多數，<font color="#347EBA">心律在測量過程大多會出現進度顯示。</font></li>
+            </ul>
+            <img src="/img/p1_watch/static1_IDC.png" id="IDCpic">
+        </div>
+
+
+        <div class="static2">
+            <ul>
+                <li>進度顯示相關研究已從條形進度顯示、與環形進度顯示等循環式或百分比顯示方式發展到互動式與非互動式等娛樂類型顯示方式呈現給使用者。</li>
+                <li>相較於平面形式，<font color="#347EBA">推測具有深度的呈現形式亦可能是減少等待時間的設計特徵。</font></li>
+            </ul>
+            <img src="/img/p1_watch/pre-loading.png" id="pre_load">
+        </div>
+
+
+        <div class="pilotback">
+            <h1>- 前導研究 -</h1>
+            <p>採用雙因子(有無碰撞預期效果與亮度變化)進行 2x2 設計，總共設計出 4 種動態組合「有碰撞預期效果與逐漸變亮(CL)」、「有碰撞預期效果與逐漸變暗(CD)」、「無碰撞預期效果與逐漸變亮(NL)」、「無碰撞預期效果與逐漸變暗(ND)」。每種組合各設計2款動態介面，並訪談3位在業界工作多年之動態設計師，了解所有類型動態介面是否達到本研究所設定的動態效果。</p>
+        </div> 
+        <div class="pilo1">
+            <div class="CD">
+                <img src="/img/p1_watch/CD.png">
+                <p>有碰撞預期效果與逐漸變暗(CD)</p>
+            </div>
+            <div class="CL">
+                <img src="/img/p1_watch/CL.png">
+                <p>有碰撞預期效果與逐漸變亮(CL)</p>
+            </div>
+        </div>
+        <div class="pilo2">
+            <div class="ND">
+                <img src="/img/p1_watch/ND.png">
+                   <p>無碰撞預期效果與逐漸變暗(ND)</p>
+            </div>
+            <div class="NL">
+                <img src="/img/p1_watch/NL.png">
+                <p>無碰撞預期效果與逐漸變亮(NL)</p>
+            </div>
+        </div>
+        <div class="interview">
+            <div class="interall">
+                <div class="inter1">
+                    <img src="/img/p1_watch/inter1.png" style="background-color: #fff; border-radius: 50%">
+                    <div class="word">
+                        <p>人名: 以 A 代稱</p>
+                        <p>職銜: 動態設計師兼攝影企劃專員</p>
+                        <p>資歷: 3年</p>
+                    </div>
+                </div>
+                <div class="inter2">
+                    <img src="/img/p1_watch/inter2.png" style="background-color: #fff; border-radius: 50%">
+                    <div class="word">
+                        <p>人名: 以 B 代稱</p>
+                        <p>職銜: 剪輯師兼動態設計師</p>
+                        <p>資歷: 3年</p>
+                    </div>
+                </div>
+                <div class="inter3">
+                    <img src="/img/p1_watch/inter3.png" style="background-color: #fff; border-radius: 50%">
+                    <div class="word">
+                        <p>人名: 以 C 代稱</p>
+                        <p>職銜: 平面設計兼動態設計師</p>
+                        <p>資歷: 4年</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mainEx">
+            <h1>- 主實驗內容 -</h1>
+            <p>根據專家訪談的結果選定以下 4 種動態介面進行心律測量的 Prototype製作。</p>
+            <img src="/img/p1_watch/mainEx.png" style="width: 100%; height:auto">
+        </div>
+        <div class="prototype">
+            <p>樣本展示Prototype</p>
+            <div class="protowatch">
+                <img src="/img/p1_watch/watch.png" id="protoout" style="width: 100%; height:auto">
+                <img src="/img/p1_watch/PL_2.gif" id="protowatchgif" >
+            </div>
+        </div>
+
+
+        <div class="participants">
+            <h1>- 受測者資料分析 -</h1>
+            <p>受測者，共計30位。</p>
+            <img src="/img/p1_watch/participants.png">
+        </div>
+
+
+        <div class="Exflow">
+            <h1>- 實驗流程圖 -</h1>
+            <img src="/img/p1_watch/Exflow.png">
+        </div>
+
+
+        <div class="resultback">
+            <div class="result">
+                <h1>- 研究結果與討論 -</h1>
+                <ul>
+                    <li>「有碰撞預期效果與逐漸變暗」動態介面最能夠引起使用者的專注度。</li>
+                    <li>「有碰撞預期效果與逐漸變亮」最能讓使用者產生放鬆的感受。</li>
+                    <li>所有動態介面皆可以讓使用者於等待過程中減少感知的等待時間，且「有碰撞預期效果與逐漸變亮」之時間感知之時長與持續時間感受程度都是最佳的。</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="Port">
+            <h1>其他設計作品</h1>
+            <div class="Ports1_word">
+                <p>教育部智慧創新跨域人才培育聯盟計畫知識地圖 - UI/UX設計</p>
+                <p>公共廁所門把鎖 - UX體驗優化設計</p>
+            </div>
+            <div class="Ports1">
+                <a href="p2_notebook.html"><img src="/img/Portfolio_imggif/notebook.png" id="notebook"style="width: 100%; height=auto;"></a>
+                <a href="p3_Design.html"><img src="/img/Portfolio_imggif/design.png" id="design"style="width: 100%; height=auto;"></a>
+            </div>
+            <div class="Ports2_back">
+                <div class="portword">
+                    <p>影片剪輯後製類</p>
+                    <p>貼圖設計</p>
+                    <p>平面設計類</p>
+                </div>
+            </div>
+            <div class="Ports2">
+                <a href="p4_Film.html"><img src="/img/Portfolio_imggif/film-01.png" id="film" style="width: 100%; height: auto;"></a>
+                <a href="p5_Sticker.html"><img src="/img/Portfolio_imggif/sticker-03-01.png" id="sticker"style="width: 100%; height=auto;"
+                onmouseover="this.src='/img/Portfolio_imggif/sticker-02-01.png';" onmouseout="this.src='/img/Portfolio_imggif/sticker-03-01.png';"></a> 
+                <a href="p6_Graphic.html"><img src="/img/Portfolio_imggif/graphic.png" id="graphic"style="width: 80%; height=auto;"></a> 
+            </div>
+        </div>
+        <div class="contact">
+            <p>
+                Contact me  /  sherryqq0330box@gmail.com
+            </p>
+        </div>
+
+    </body>
+</html>

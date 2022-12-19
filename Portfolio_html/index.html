@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sherry Chung Portfolio</title>
+        <link rel="stylesheet" type="test/css" href="reset.css">
+        <style>
+            
+            *{
+                margin: 0%;
+                padding: 0%;
+            }
+            /*@keyframes bounce {
+                0% {transform: scale(1);}
+                16% {transform: scale(-0.32);}
+                28% {transform: scale(0.13);} 
+                44% {transform: scale(-0.05);}
+                59% {transform: scale(0.02);}
+                73% {transform: scale(-0.01);}
+                88% {transform: scale(0);}
+                100% {transform: scale(0);}
+            }*/
+
+            .menuback {
+                box-shadow: 0px 6px 20px ; color: rgb(216, 216, 216);
+                opacity: 50;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 999;
+                background: #fff;
+            }
+            .menu{
+                display: flex;
+                max-width: 1200px;
+                height: 90px;
+                margin: auto;
+                background-color: rgb(255, 255, 255);
+            }
+            .menu nav{
+                text-align: right;
+                width: 100%;
+                font-size: 0%;
+                line-height: 60px;
+            }
+            .menu nav a{
+                display: inline-block;
+                text-decoration: none;
+                font-size: 20px;
+                margin: 15px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(157, 157, 157);
+            }
+            #name{
+                text-align: left;
+                width: 110px;
+                height: auto;
+                padding-top: 9px;
+            }
+            .menu nav a:hover{
+                color: #eaab25;
+            }
+
+
+
+
+
+            .glass_TOP{
+                padding-top: 400px;
+            }
+            .glass{
+                width: 300px;
+                height:fit-content;
+                margin: auto;
+                transform: scale(1,1);
+                transition: 0.3s cubic-bezier(.63,2.6,.58,.75);
+            }
+            .glass:hover{
+                transform: scale(1.3,1.3);
+                transition: 0.15s ease-in;
+            }
+            #bigglass{
+                width: 100%;
+                height: auto;
+            }
+
+
+
+            .intro{
+                width: 500px;
+                margin: auto;
+            }
+            .intro h1{
+                padding-top: 15px;
+                text-align: center;
+                color: #eaab25;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+            .intro p{
+                padding-top: 17px;
+                line-height: 1.8;
+                text-align: justify;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(157, 157, 157);
+                font-size: 18px;
+            }
+
+
+
+            .portgif{
+                text-align: center;
+                width: auto;
+                height: 70px;
+                margin: auto;
+                padding-top: 400px;
+            }
+            .Ports1{
+                width: 1200px;
+                height: auto;
+                display: flex;
+                margin: auto;
+                padding-top: 15px;
+            }
+            .Ports1 a{
+                width: 400px;
+                height: auto;
+                margin: 0 60px;
+                text-align: center;
+            }
+            .Ports1_word{
+                width: 1200px;
+                height: auto;
+                margin: auto;
+                color: rgb(157, 157, 157);
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                display: flex;
+                padding-top: 80px;
+
+            }
+            .Ports1_word p{
+                display: inline-block;
+                width: 230px;
+                height: auto;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .Ports1 a:hover{
+                transform: translateY(-10px);
+            }
+
+
+
+            .Ports2 {
+                padding-top: 60px;
+                width: 1200px;
+                height: auto;
+                display: flex;
+                margin: auto;
+                position: relative;
+            }
+            .Ports2 a{
+                width: 400px;
+                height: auto;
+                margin: 0px 60px;
+                text-align: center;
+            }
+            .Ports2_back{
+                padding-top: 0px;
+                width: 100%;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(157,157,157);
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                margin: auto;
+                display: flex;
+                position: absolute;
+                top: 1620px;
+                box-shadow:0px -15px 30px -22px rgb(157, 157, 157);
+            }
+            .portword{
+                padding-top: 80px;
+                width: 1200px;
+                height: 200px;
+                margin: auto;
+                display: flex;
+            }
+            .portword p{
+                width: 200px;
+                height: auto;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .Ports2 a:hover{
+                transform: translateY(-10px);
+            }
+
+
+
+            .Proff {
+                text-align: center;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                top: 1970px;
+                box-shadow:0px -15px 30px -22px rgb(157, 157, 157);
+            }
+            .proffgif{
+                text-align: center;
+                width: auto;
+                height: 105px;
+                margin: auto;
+                padding-top: 280px;
+            }
+            .static{
+                width: 1000px;
+                height: auto;
+                display: flex;
+                margin: auto;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: rgb(157, 157, 157);
+            }
+            .static_name{
+                width: 200px;
+                height: auto;
+                margin: 30px 20px;
+                text-align: right;
+                line-height: 50px;
+                font-size: 20px;
+            }
+            .static_bar{
+                width: 1000px;
+                height: auto;
+                margin: 32px 20px;
+                text-align: left;
+                line-height: 50px;
+            }
+            .static_bar img{
+                border-radius: 10px;
+            }
+            .bar1{
+                position: relative;
+            }
+            .bar1:hover::before{
+                position: absolute;
+                transform: ;
+                top: -25px;
+                right: 3em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '85%';
+            }
+            .bar2{
+                position: relative;
+            }
+            .bar2:hover::before{
+                position: absolute;
+                top: -25px;
+                right: 3em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '85%';
+            }
+            .bar3{
+                position: relative;
+            }
+            .bar3:hover::before{
+                position: absolute;
+                top: -25px;
+                right: 1em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '90%';
+            }
+            .bar4{
+                position: relative;
+            }
+            .bar4:hover::before{
+                position: absolute;
+                top: -25px;
+                right: 8.7em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '70%';
+            }
+            .bar5{
+                position: relative;
+            }
+            .bar5:hover::before{
+                position: absolute;
+                top: -25px;
+                right: 16.2em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '50%';
+            }
+            .bar6{
+                position: relative;
+            }
+            .bar6:hover::before{
+                position: absolute;
+                top: -25px;
+                right: 16.2em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '50%';
+            }
+            .bar7{
+                position: relative;
+            }
+            .bar7:hover::before{
+                position: absolute;
+                top: -25px;
+                right: 16.2em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '50%';
+            }
+            .bar8{
+                position: relative;
+            }
+            .bar8:hover::before{
+                position: absolute;
+                top: -25px;
+                right: 4.8em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '80%';
+            }
+            .bar9{
+                position: relative;
+            }
+            .bar9:hover::before{
+                position: absolute;
+                top: -25px;
+                right: 10.5em;
+                color: #fff;
+                font-size: 20px;
+                background: #000000;
+                padding: 5px;
+                border-radius: 50%;
+                content: '65%';
+            }
+
+
+
+            .resume {
+                margin: 1100px auto auto;
+                width: 1200px;
+                height: auto;
+                text-align: center;
+            }
+            .resumegif{
+                width: auto;
+                height: 108px;
+            }
+            .resumeblock{
+                padding-top: 30px;
+                display: flex;
+            }
+            .resumeblock .res_pic{
+                height: 550px;
+                margin: 0 20px;
+            }
+            .resumeinfo{
+                width: 750px;
+                text-align: left;
+                margin: auto;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                padding: 0px 0px 0px 20px;
+            }     
+            .resumeinfo h1{
+                color: #eaab25;
+                font-size: 35px;
+            }       
+            .resume_all{
+                width: 100%;
+                height: auto;
+                display: flex;
+                padding-top: 30px;
+            }
+            .resinfo_left{
+                width: 1200px;
+                color: rgb(157, 157, 157);
+            }
+            .resinfo_left h3{
+                font-size: 22px;
+                padding-top: 20px;
+            }
+            .resinfo_left p{
+                font-size: 17px;
+                padding-top: 10px;
+            }
+            .resinfo_right{
+                color: rgb(157, 157, 157);
+            }
+            .resinfo_right h3{
+                font-size: 22px;
+                padding-top: 18px;
+            }
+            .resinfo_right ul{
+                font-size: 17px;
+                line-height: 1.7;
+                padding: 10px;
+                text-align: justify;
+                
+            }
+            .resinfo_right li{
+                margin-bottom: 10px;
+            }
+
+
+
+           .contact{
+            margin: 30px  auto auto;
+            text-align: center;
+            padding-top: 20px;
+            width: 100%;
+            height: 50px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            background-color: rgb(238, 238, 238);
+            color: rgb(157, 157, 157);
+           }
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="menuback ">
+            <div class="menu">
+                <a href="" >
+                    <img src="/img/glass157gray.png" id="name" 
+                    onmouseover="this.src='/img/glass234orange.png';" onmouseout="this.src='/img/glass157gray.png';">
+                </a>
+                <nav style="navbar-right" >
+                    <a href="#portgif" >Portfolio</a>
+                    <a href="#proffgif" >Professional</a>
+                    <a href="#resumegif" >Resume</a>
+                </nav>  
+            </div>    
+        </div>
+    
+
+        <div class="glass_TOP">
+            <div class="glass">
+                <a href="">
+                    <img src="/img/glass234orange.png" id="bigglass">
+                </a>
+            </div>
+            <div class="intro">
+                <h1>
+                    Chung, Yeu-Shyuan
+                </h1>
+                <p> 
+                    我是小盒子(Sherry)。自 2018 年起從事影片後製剪輯與平面設計，2020 年決心就讀 UI/UX 設計相關研究所做為未來進入 UI/UX 職場的跳板，就學期間注重  Apple Watch  的使用者體驗設計，畢業後仍繼續往 UI/UX 相關設計邁進。
+                </p>
+            </div>
+        </div>
+
+
+        <div class="Port">
+            <div class="portgif">
+                <img src="/img/Portfolio_imggif/portfolio.gif" id="portgif" style="width: auto; height: 100%;">
+            </div>
+            <div class="Ports1_word">
+                <p>智慧型手錶等待介面之視覺深度形式對使用者情緒感知的影響</p>
+                <p>教育部智慧創新跨域人才培育聯盟計畫知識地圖 - UI/UX設計</p>
+                <p>公共廁所門把鎖 - UX體驗優化設計</p>
+            </div>
+            <div class="Ports1">
+                <a href="p1_Watch.html"><img src="/img/Portfolio_imggif/watch.png" id="watch"style="width: 90%; height=auto;"></a> 
+                <a href="p2_notebook.html"><img src="/img/Portfolio_imggif/notebook.png" id="notebook"style="width: 100%; height=auto;"></a>
+                <a href="p3_Design.html"><img src="/img/Portfolio_imggif/design.png" id="design"style="width: 100%; height=auto;"></a>
+            </div>
+            <div class="Ports2_back">
+                <div class="portword">
+                    <p>影片剪輯後製類</p>
+                    <p>貼圖設計</p>
+                    <p>平面設計類</p>
+                </div>
+            </div>
+            <div class="Ports2">
+                <a href="p4_Film.html"><img src="/img/Portfolio_imggif/film-01.png" id="film" style="width: 100%; height: auto;"></a>
+                <a href="p5_Sticker.html"><img src="/img/Portfolio_imggif/sticker-03-01.png" id="sticker"style="width: 100%; height=auto;"
+                onmouseover="this.src='/img/Portfolio_imggif/sticker-02-01.png';" onmouseout="this.src='/img/Portfolio_imggif/sticker-03-01.png';"></a> 
+                <a href="p6_Graphic.html"><img src="/img/Portfolio_imggif/graphic.png" id="graphic"style="width: 80%; height=auto;"></a> 
+            </div>
+        </div>
+
+
+        <div class="Proff">
+            <div class="proffgif">
+                <img src="/img/professional_imggif/professional.gif" id="proffgif" style="width: auto; height: 100%;">
+            </div>
+            <div class="static">
+                <div class="static_name">
+                    <p>Photoshop</p>
+                    <p>illustrator</p>
+                    <p>AfterEffect</p>
+                    <p>Figma</p>
+                    <p>Premiere</p>
+                    <p>AdobeXD</p>
+                    <p>MarvelAPP</p>
+                    <p>Indesign</p>
+                    <p>html/CSS</p>
+                </div>
+                <div class="static_bar">
+                    <div class="bar1">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar1" style="width: 85%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                    <div class="bar2">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar2" style="width: 85%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                    <div class="bar3">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar3" style="width: 90%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                    <div class="bar4">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar4" style="width: 70%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                    <div class="bar5">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar5" style="width: 50%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                    <div class="bar6">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar6" style="width: 50%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                    <div class="bar7">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar7" style="width: 50%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                    <div class="bar8">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar8" style="width: 80%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                    <div class="bar9">
+                        <img src="/img/professional_imggif/graybar.jpg" id="bar9" style="width: 65%; height: 15px"
+                        onmouseover="this.src='/img/professional_imggif/orangebar.jpg';" onmouseout="this.src='/img/professional_imggif/graybar.jpg';" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="resume">
+            <div class="resumegif">
+                <img src="/img/resume/resume.gif" id="resumegif" style="width: auto; height: 100%;">
+            </div>
+            <div class="resumeblock">
+                <div class="res_pic">
+                    <img src="/img/resume/me01.jpg" id="resumeme" style="width: auto; height: 100%;">
+                </div>
+                <div class="resumeinfo">
+                    <h1>
+                        Chung, Yeu-Shyuan (Sherry)
+                    </h1>
+                    <div class="resume_all">
+                        <div class="resinfo_left">
+                            <h3>
+                                Education
+                            </h3>
+                            <p>
+                                國立臺北科技大學互動設計系研究所
+                            </p>
+                            <p>
+                                私立大同大學互動媒體設計系
+                            </p>
+                            <h3>
+                                Languages
+                            </h3>
+                            <p>
+                                English - Intermediate
+                            </p>
+                            <p>
+                                Japanese - Basic
+                            </p>
+                        </div>
+                        <div class="resinfo_right">
+                            <h3>
+                                Experience
+                            </h3>
+                            <ul>
+                                <li>2018 - 2020 年已有影片製作之一條龍服務能力，並同時接觸到平面設計領域，曾獲得公司肯定設計2020新年DM設計、2020端午節禮籃DM設計。</li>
+                                <li>2021 年參與教育部智慧創新跨域人才培育聯盟計畫 - 知識地圖 UI/UX設計。</li>
+                                <li>2022 年發表 ICCE-TW paper「Influence of Brightness on Anticipated Effectsof Collision Caused by the Motion-in-depth of Objects in Three-dimensional Space」</li>
+                                <li>2021 - 2022 年針對智慧型手錶 (Apple Watch) UI/UX 進行使用者體驗研究相關論文撰寫，論文名稱「智慧型手錶等待介面之視覺深度形式對使用者情緒感知的影響」。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="contact">
+            <p>
+                Contact me  /  sherryqq0330box@gmail.com
+            </p>
+        </div>
+    </body>
+</html>
+
+
+
+
+
