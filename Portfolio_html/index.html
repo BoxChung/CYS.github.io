@@ -72,19 +72,28 @@
 
 
 
-            .glass_TOP{
-                padding-top: 400px;
+            .BTN_glass:hover{
+                transform: scale(1.5,1.5);
+                transition: 0.15s ease-in;
             }
-            .glass{
+
+            .BTN_glass{
                 width: 300px;
                 height:fit-content;
                 margin: auto;
                 transform: scale(1,1);
                 transition: 0.3s cubic-bezier(.63,2.6,.58,.75);
+                background-color: transparent;
+                border: none;
             }
-            .glass:hover{
-                transform: scale(1.3,1.3);
-                transition: 0.15s ease-in;
+            .BTN_glass_Div{
+                width: 300px;
+                height:fit-content;
+                margin: auto;
+
+            }
+            .glass_TOP{
+                padding-top: 400px;
             }
             #bigglass{
                 width: 100%;
@@ -489,23 +498,39 @@
             </div>    
         </div>
     
+        
+        
 
+        <script type="text/javascript">
+            function changeText(text) {
+                if(document.getElementById('MyText').innerHTML == " "){
+                    document.getElementById('MyText').innerHTML=text;
+                    document.getElementById('MyName').innerHTML="Chung, Yeu-Shyuan";
+                }
+                else{
+                    document.getElementById('MyText').innerHTML=" ";
+                    document.getElementById('MyName').innerHTML=" ";
+                }
+            }
+        </script>
         <div class="glass_TOP">
-            <div class="glass">
-                <a href="">
-                    <img src="./image/glass234orange.png" id="bigglass">
-                </a>
+        
+            <div class="BTN_glass_Div" onclick="changeText('我是小盒子(Sherry)。自 2018 年起從事影片後製剪輯與平面設計，2020 年決心就讀 UI/UX 設計相關研究所做為未來進入 UI/UX 職場的跳板，就學期間注重  Apple Watch  的使用者體驗設計，畢業後仍繼續往 UI/UX 相關設計邁進。');">
+                <button class="BTN_glass"> 
+                    <img src="./image/glass234orange.png" 
+                    class="glass" 
+                    id="bigglass"
+                    >
+                </button>
             </div>
             <div class="intro">
-                <h1>
-                    Chung, Yeu-Shyuan
-                </h1>
-                <p> 
-                    我是小盒子(Sherry)。自 2018 年起從事平面設計與宣傳影片規劃製作的行業，並在 2020 年決心就讀 UI/UX 設計相關的研究所做為未來進入該領域職場的跳板；就學期間主要探討的是 Apple Watch 使用者體驗設計，另外對於產品包裝、Logo設計與電繪插畫皆有所涉略。
-                </p>
+                <h1 id="MyName"> </h1>
+                <p id="MyText"> </p>
             </div>
         </div>
 
+        
+        
 
         <div class="Port">
             <div class="portgif">
